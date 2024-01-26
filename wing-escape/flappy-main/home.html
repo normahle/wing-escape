@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            background-image: url('images/background-img.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #87CEFA;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #5F9EA0;
+        }
+
+        section {
+            margin-top: 30px;
+        }
+
+        /* Responsive Styles */
+        @media only screen and (min-width: 600px) {
+            /* Adjust styles for screens 600px and larger */
+            button {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Game</h1>
+    </header>
+
+    <main>
+        <button id="startButton">Start Game</button>
+        <button id="help">Help</button>
+        <button id="terms">Terms</button>
+    </main>
+
+    <script>
+        document.getElementById('startButton').addEventListener('click', function () {
+            // Redirect to index.html
+            window.location.href = 'index.html';
+        });
+
+        document.getElementById('help').addEventListener('click', function () {
+            // Redirect to help.html
+            window.location.href = 'help.html';
+        });
+
+        document.getElementById('terms').addEventListener('click', function () {
+            // Redirect to terms.html
+            window.location.href = 'terms.html';
+        });
+    </script>
+</body>
+
+</html>
+  
